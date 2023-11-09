@@ -1,0 +1,183 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  color: #f0f0fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #131445;
+  background-image: radial-gradient(#00009e, #131445);
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.home {
+  font-size: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+.pod-images {
+  height: 300px;
+  width: 300px;
+  display:inline-flexbox;
+  flex-wrap: wrap;
+}
+
+header {
+  padding: 20px 0;
+  height: 130px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "main";
+}
+
+h2 {
+  font-size: 22px;
+}
+
+figcaption, p, li, h2 {
+  margin: 10px 0px;
+}
+
+a {
+  color: #f0f0fa;
+}
+
+a:hover {
+  color: #acaccc;
+}
+
+button {
+  background-color: #e1e1f1;
+  color: #131445;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 4px #acaccc;
+  position: relative;
+}
+
+button:hover {
+  background-color: white;
+}
+
+button:active {
+  box-shadow: 0px 2px #acaccc;
+  top: 2px;
+}
+
+#more-info {
+  display: none;
+}
+
+#photo {
+  margin-bottom: 10px;
+  max-width: 100%;
+  max-height: calc(100% - 66px);
+}
+
+figure {
+  line-height: 1em;
+  margin: 10px 40px;
+  height: calc(100vh - 180px);
+  grid-area: main;
+}
+
+#info-box, #about-box {
+  padding: 30px;
+  margin: 5px 15%;
+  width: 70%;
+  height: auto;
+  min-height: calc(100vh - 170px);
+  background-color: hsla(217, 100%, 7%, 0.95);
+  border-radius: 10px;
+  grid-area: main;
+  z-index: 1;
+}
+
+#info-box p, #about-box p {
+  line-height: 1.5em;
+}
+
+#description {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.text-body {
+  text-align: left;
+}
+
+footer {
+  height: 30px;
+}
+
+@media (max-height: 690px) {
+  body {
+    font-size: 16px;
+  }
+  #photo {
+    max-height: calc(100% - 52px);
+  }
+  footer {
+    height: 20px;
+  }
+}
+
+@media (orientation: portrait) {
+  #info-box, #about-box {
+    padding: 20px;
+    margin: 5px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pods-container {
+  display: flex;
+  flex-flow: wrap;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
